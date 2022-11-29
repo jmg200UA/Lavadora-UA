@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Interfaz de Lavadora</title>
+	<script src="../electro.js"></script>
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onmousemove="principales()">
+    <!-- Modos -->
+    <div id="principal">
+    	<div id="botonesarriba">
+    		<div>
+    			<button id="encendido" onclick="programas(4);"><img src="img/onoff.png" alt="Apagar" title="Apagar"></button>
+    		</div>
+    		
+    		<div id='bloqueo'></div>
+    		
+    	</div>
+        <div id="modos">
+            <div id="uno">
+                <h4>Lavado</h4>
+                <div id="lavado">
+                    <div><label><img src="img/spiral.png" title="Revoluciones Lavado" alt="Revoluciones Lavado"> <input id="revolucionesLavado" type="range" min="600" max="1200" step="50" onmousemove="valores();" /></label><p id="valorrevlav"></p></div>
+                    <div id="cajastiempo"><label><img src="img/clock.png" title="Tiempo Lavado" alt="Tiempo Lavado"> <input id="tiempoLavado" type="range" min="10" max="60" step="5" onmousemove="valores();" /></label><p id="valortiemplav"></p></div>
+                </div>
+            </div>
+
+            <div id="principal2">
+				<div id="pantalla">
+	                <!-- PANTALLA CON EL TIEMPO -->
+	                <div id="tiempo">
+	                </div>
+	                <div id="info">
+	                	<div id="parametros2">
+				            <div><label><img src="img/peso.png" alt="Peso" title="Peso"><p id="pesasion"></p></label></div>							
+				            <div><label><img src="img/flash.png" alt="Consumo" title="Consumo"><p id="consumision"></p></label></div>
+				            <div><label><img src="img/humedad.png" alt="Humedad" title="Humedad"><p id="humedasion"></p></label></div>
+				        </div>
+	                </div>
+	        	</div>
+	        	<p id="pruebiscula"></p>
+	    	</div>
+
+            <div id="dos">
+                <h4>Centrifugado</h4>
+                <div id="centrifugado">
+                    <div><label><img src="img/rpm.png" title="Revoluciones Centrifugado" alt="Revoluciones Centrifugado"> <input id="revolucionesCentrifugado" type="range" min="600" max="1200" step="50" onmousemove="valores();" /></label><p id="valorrevcent"></p></div>
+                    <div id="cajastiempo"><label><img src="img/clock2.png" title="Tiempo Centrifugado" alt="Tiempo Centrifugado"> <input id="tiempoCentrifugado" type="range" min="10" max="60" step="5" onmousemove="valores();" /></label><p id="valortiempcent"></p></div>
+                </div>
+            </div>
+        </div>
+		
+		<div id="parametros">
+            <div><label><img src="img/detergent.png" alt="Detergente" title="Detergente">Detergente <input id="nivelDetergente" type="range" min="10" max="50" step="10" onmousemove="valores();" /></label><p id="valordet"></p></div>
+            <div><label><img src="img/suavizant.png" alt="Suavizante" title="Suavizante">Suavizante <input id="nivelSuavizante" type="range" min="10" max="50" step="10" onmousemove="valores();"/></label><p id="valorsuav"></p></div>
+            <div><label><img src="img/soltar.png" alt="Agua" title="Agua">Agua <input id="nivelAgua" type="range" min="40" max="120" step="10" onmousemove="valores();" /></label><p id="valoragua"></p></div>
+            <div><label><img src="img/calor.png" alt="Temperatura" title="Temperatura">Temperatura <input id="temperaturaAgua" type="range" min="30" max="90" step="10" onmousemove="valores();" /></label><p id="valortemp"></p></div>
+        </div>
+
+        <div id="abajo">
+		    <div><button class="reproductor2" id="lavar"><img src="img/play.png" alt="Lavar" title="Lavar"></button></div>
+		    <div><button class="reproductor" id="parar" onclick="programas(5);"><img src="img/pausa.png" alt="Parar" title="Parar"></button></div>
+			<audio src="sonido/sonido_agradable.mp3"></audio>
+			<audio id="audio2" src="sonido/sonido_fantasy.mp3"></audio>
+			<script type="text/javascript">
+				let boton = document.querySelector(".reproductor")
+			    let audioEtiqueta = document.querySelector("audio")
+
+			    boton.addEventListener("click", () => {
+			      audioEtiqueta.setAttribute("src", "sonido/sonido_agradable.mp3")
+			      audioEtiqueta.play()
+			      console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+			    })
+
+			    let boton2 = document.querySelector(".reproductor2")
+			    let audioEtiqueta2 = document.getElementById('audio2')
+
+			    boton2.addEventListener("click", () => {
+			      audioEtiqueta2.setAttribute("src", "sonido/sonido_fantasy.mp3")
+			      audioEtiqueta2.play()
+			      console.log(`Reproduciendo: ${audioEtiqueta2.src}`)
+			    })
+				tiempo();
+			</script>
+			<div id="tres">
+               <button id="Manual"><img src="img/manual.png" alt="Manual" title="Manual" onclick="programas(10);"></button>
+        	</div>
+		    <div><button id="inicio"><img src="img/home.png" alt="Inicio" title="Inicio" onclick="programas(0);"></button></div>
+		    <div id="modosdelavado">
+		    	<div id="programas">
+		    		<h4>Modos</h4>
+			        <div><button class="botonm"  type="button" name="primero" onclick="programas(1);"><img src="img/lavadorarapido.png" title="Lavado rápido" alt="Lavado rápido"></button></div>
+			        <div><button class="botonm"  type="button" name="segundo" onclick="programas(2);"><img src="img/lavadoraestandar.png" title="Lavado estándar" alt="Lavado estándar"></button></div>
+			        <div><button class="botonm"  type="button" name="tercero" onclick="programas(3);"><img src="img/lavadoraafondo.png" title="Lavado a fondo" alt="Lavado a fondo"></button></div>
+				</div>
+		    </div> 
+		    <div id="modosdecolor">
+		    	<h4 id='ropiscula'>Ropa</h4>
+		    	<button id="sinropa" alt="Sin ropa" title="Sin ropa"><img src='img/sinropa.png' alt='Sinropa' title='Sinropa'></button>
+		    </div>
+		    <div id="secado">
+		    	<h4>Secado</h4>
+		    	<button id="secadobot" alt="Secado" title="Secado" onclick="secasao()"><img src="img/secado.png" alt="Secar" title="Secar"></button>
+		    </div>
+		    
+    	</div>
+    </div>
+
+    
+</body>
+<script type="text/javascript">valores();</script>
+</html>

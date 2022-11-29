@@ -1,0 +1,697 @@
+body{
+	border: 1px solid #191515;
+	width: 800px;
+	height: 470px;
+}
+
+
+input{
+    width: 65px;
+}
+
+#nivelDetergente{
+}
+
+#nivelSuavizante{
+    margin-left: 5;
+}
+
+#nivelAgua{
+    margin-left: 5px;
+}
+
+#temperaturaLavado{
+    margin-left: 18px;
+}
+
+/* CAJAS */
+
+/* PARAMETROS*/
+#parametros{
+	border: 3px solid #191515;
+	border-radius: 0 0 25px 25px;
+	width: 350px;
+	height: 115px;
+	display: inline-flex;
+	text-align: center;
+	margin-top: -30px;
+	background-color: #D6F3F6;
+	margin-left: 201px;
+	margin-bottom: 25px;
+}
+
+#parametros2{
+	width: 250px;
+	height: 100px;
+	display: inline-flex;
+	text-align: center;
+	margin-top: 5px;	
+}
+
+#parametros2>div>button>img{
+	width: 90%;
+	height: 100%;
+}
+
+#imgopc{
+	height: 90%;
+	width: 85%;
+}
+
+#parametros2>div{
+	margin: 5px;
+}
+
+#parametros2>div>label>img{
+	margin-left: 10px;
+	height: 30%;
+	width: 40%;
+}
+
+#parametros>div{
+	margin: 5px;
+}
+
+#parametros>div>label>img{
+	margin-left: 10px;
+
+	height: 35%;
+	width: 50%;
+}
+
+#fotoagua{
+	height: 45%;
+	width: 45%;
+}
+
+#parametros>div{
+	margin-left: 5px;
+}
+
+
+/*LAVADO*/
+#lavado{
+	width: 110px;
+	height: 150px;
+	padding-top: 5px;
+	border: 3px solid #191515;
+	border-radius: 10px;
+	background-color: #D6F3F6;
+}
+
+#lavado>div>label>img{
+	margin-left: 38px;
+	height: 65%;
+	width: 25%;
+}
+
+#cajastiempo{
+	margin-top: -10px;
+}
+
+#revolucionesLavado{
+    margin-left: 15px;
+    width: 75px;
+}
+
+#tiempoLavado{
+    margin-left: 15px;
+    width: 75px;
+}
+
+#uno{
+	margin-left: 23px;
+	margin-right: 10px;
+}
+
+
+#uno>h4{
+	/*border: 1px solid #191515;*/
+	border-radius: 50px / 45px;
+	width: 55px;
+	background-color: #FAF3F3;
+	margin-left: 25px;
+}
+
+
+
+/*CENTRIFUGADO*/
+#centrifugado{
+	width: 110px;
+	height: 150px;
+	margin-left: 57px;
+	padding-top: 5px;
+	border: 3px solid #191515;
+	border-radius: 10px;
+	background-color: #D6F3F6;
+}
+
+#centrifugado>div>label>img{
+	margin-left: 38px;
+	height: 65%;
+	width: 25%;
+}
+
+#revolucionesCentrifugado{
+    margin-left: 15px;
+    width: 75px;;
+}
+
+#tiempoCentrifugado{
+    margin-left: 15px;
+    width: 75px;
+}
+
+#dos>h4{
+	/*border: 1px solid #191515;*/
+	border-radius: 50px / 45px;
+	width: 96px;
+	background-color: #FAF3F3;
+	margin-left: 65px;
+}
+
+/*SITUANDO LAS CAJAS DE LOS MODOS*/
+
+#modos{
+	display: inline-flex;
+}
+
+#principal{
+	border: 3px solid #191515;
+	border-radius: 35px;
+	height: 450px;
+	margin: 5px;
+	background-color: #E0DDDD;
+
+}
+
+#principal2{
+	border: 3px solid #191515;
+	border-radius: 25px 25px 0 0;
+	width: 350px;
+	height: 200px;
+	text-align: center;
+	background-color: #9A9A9A;
+	margin-top: -28px;
+	margin-left: 50px;
+}
+
+/*MOSTRAR EL TIEMPO*/
+
+#pantalla{
+	border: 3px solid #191515;
+	margin-left: 22px;
+	margin-top: 20px;
+	width: 300px;
+	height: 150px;
+	font-size: 360%;
+	background-color: #F1FAFD;
+	text-align: center;
+	border-radius: 25px;
+}
+
+/*LAVAR*/
+
+#lavar{
+	border: 3px solid #191515;
+	border-radius: 25px;
+	margin-left: 25px;
+	width: 65px;
+	height: 65px;
+	margin-top: -30px;
+}
+
+#lavar>img{
+	width: 40%;
+	height: 40%;
+}
+
+/*PARAR*/
+
+#parar{
+    border: 3px solid #191515;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: -30px;
+    width: 65px;
+    height: 65px;
+    background-color: #A2A2A2;
+}
+
+#parar>img{
+	width: 40%;
+	height: 40%;
+}
+
+/* SECCIONES PANTALLA */
+
+#tiempo{
+    margin-top: 5px;
+    font-size: 50px;
+    /*border: 3px solid #191515;*/
+}
+
+#info{
+	/*border: 3px solid #191515;*/
+	margin-top: 10px;
+	height: 60px;
+	font-size: 20%;
+	text-align: center;
+	margin-right: 30px;
+
+}
+
+#info>h2{
+	text-align: center;
+	margin-left: 25px;
+	color: #F80909;
+	background-color: #FFFFFF;
+	border-radius: 50px / 15px;
+}
+
+#botonesarriba{
+	display: inline-flex;
+}
+
+#bloqueo{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	margin-left: 615px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+#bloqueo>img{
+	width: 98%;
+	height: 85%;
+}
+
+#encendido{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	margin-left: 45px;
+	margin-top: 15px;
+	height: 45px;
+	width: 45px;
+	text-align: center;
+}
+
+#encendido>img{
+	width: 110%;
+	height: 80%;
+}
+
+#luz{
+	border: 3px solid #191515;
+	height: 20px;
+	width: 20px;
+	margin-left: 45px;
+	border-radius: 10px;
+	background-color: #24830E;
+}
+
+#luzroja{
+	border: 3px solid #191515;
+	height: 20px;
+	width: 20px;
+	margin-left: 45px;
+	border-radius: 10px;
+	background-color: #B60E12;
+}
+
+/* APARIENCIA PROGRAMAS */
+
+#programas{
+	display: inline-flex;
+	margin-top: -12px;
+}
+
+#programas>h4{
+	margin-left: 30px;
+	margin-right: 8px;
+	border-radius: 50px / 45px;
+	width: 50px;
+	background-color: #FAF3F3;
+}
+
+#programas>div{
+	margin-right: 5px;
+}
+
+#programas>div>button{
+	margin-top: 5px;
+	border: 3px solid #191515;
+	border-radius: 10px;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+
+}
+
+#programas>div>button:hover{
+	background-color: #AAB7F6; /*color de fondo*/
+	color: #FCF8F8; /*color de fuente (letras)*/
+}
+
+#modosdelavado>h2{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 170px;
+	font-size: 120%;
+	border-radius: 10px;
+	background-color: #FAF3F3;
+	width: 65px;
+}
+
+/* ----------------*/
+
+button{
+	cursor: pointer;
+}
+
+#inicio{
+	margin-top: -15px;
+	margin-left: 15px;
+	border: 3px solid #191515;
+	border-radius: 10px;
+	height: 50px;
+	width: 50px;
+	background-color: #fff;
+}
+
+ #inicio>img{
+ 	width: 100%;
+	height: 80%;
+ }
+/*
+ .botonm{
+ 	margin-top: 8px;
+	border: 3px solid #191515;
+	border-radius: 10px;
+	height: 45px;
+	width: 45px;
+	background-color: #fff;
+}
+*/
+ .botonm>img{
+ 	width: 100%;
+	height: 80%;
+ }
+
+#abajo{
+	display: inline-flex;
+}
+
+.reproductor{
+	margin-top: 14px;
+}
+
+.reproductor2{
+	margin-top: 14px;
+}
+
+#abajo2{
+	display: inline-flex;
+}
+
+#modo1{
+	font-size: 20%;
+	height: 25px;
+	text-align: center;
+	margin-right: 35px;
+	margin-bottom: -8px;
+}
+
+#modo1>h2{
+	border-radius: 10px;
+	background-color: #fff;
+	width: 90%;
+	margin-left: 20px;
+	border: 3px solid #DFDDDD;
+	margin-bottom: 1px;
+	margin-top: 4px;
+}
+
+ul{
+	width: 150px;
+    margin-top: 0px;
+    list-style: none;
+}
+
+h2{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+/*MENSAJE MODAL*/
+#capa-fondo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background-color: rgba(255,255,255, .8);
+}
+
+	#capa-fondo>article{
+		background-color: #fff;
+		border: 2px solid #000;
+		text-align: center;
+		width: 20em;
+
+		position: absolute;
+		top: 2em;
+		left: 50%;
+		transform: translate(-50%); 
+	}
+
+	#capa-fondo>article>h2{
+		background-color: #FFFFFF;
+		margin: .5em;
+		padding: .5em;
+	}
+
+	#capa-fondo>article>footer>button{
+		margin: .5em;
+		font-size: 1em;
+		background-color: #ccc;
+		border: 1px #aaa solid;
+		padding: .5em 2em;
+		cursor: pointer;
+	}
+
+
+/* VALORES SLIDERS */
+
+#valordet{
+	margin-top: -5px;
+	margin-left: 5px;
+}
+#valorsuav{
+	margin-top: -5px;
+	margin-left: 5px;
+}
+#valoragua{
+	margin-top: -5px;
+	margin-left: 5px;
+}
+#valortemp{
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+#valorrevlav{
+	margin-top: -5px;
+	margin-left: 45px;
+}
+#valortiemplav{
+	margin-top: -5px;
+	margin-left: 45px;
+}
+#valorrevcent{
+	margin-top: -5px;
+	margin-left: 45px;
+}
+#valortiempcent{
+	margin-top: -5px;
+	margin-left: 45px;
+}
+
+.cont-temporizador{
+	display: flex;
+	justify-content: center;
+	margin-left: 25px;
+}
+
+.cont-temporizador .bloque{
+	margin: 0px 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+.cont-temporizador .bloque div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(80,80,80);
+	box-shadow: 0px 0px 6px 2px #727272 inset;
+	color: #ffffff;
+	font-size: 40px;
+	width: 50px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+#opciones{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	margin-left: 180px;
+	height: 45px;
+	width: 45px;
+	text-align: center;
+	margin-top: -2px;
+	cursor: pointer;
+}
+
+#opciones>img{
+	width: 98%;
+	height: 80%;
+}
+
+#opc{
+	font-size: 20%;
+	height: 25px;
+	text-align: center;
+	margin-right: 35px;
+}
+
+#opc>h2{
+	border-radius: 10px;
+	background-color: #fff;
+	width: 90%;
+	margin-left: 20px;
+	border: 3px solid #DFDDDD;
+	margin-bottom: 1px;
+	margin-top: 4px;
+}
+
+#botopc{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	margin-left: 15px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+#botopc>img{
+	width: 98%;
+	height: 80%;
+}
+
+#atras{
+    border: 2px solid #191515;
+    border-radius: 6px;
+    margin-left: 190px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#atras2{
+    border: 2px solid #191515;
+    border-radius: 6px;
+    height: 23px;
+    margin-top: 83px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+#modosflex{
+    display: inline-flex;
+}
+
+#pruebiscula{
+	margin-top: 1px;
+}
+
+#Manual{
+    border: 3px solid #191515;
+    margin-left: 75px;
+    margin-top: -15px;
+    border-radius: 10px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#Manual>img{
+    width: 100%;
+    height: 90%;
+}
+
+#secadobot{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	height: 55px;
+	width: 55px;
+	cursor: pointer;
+}
+
+#secadobot>img{
+	width: 100%;
+    height: 85%;
+}
+
+#secado{
+	margin-left: 10px;
+}
+
+#secado>h4{
+	margin-top: -50px;
+	margin-bottom: 20px;
+	border-radius: 50px / 45px;
+	width: 50px;
+	background-color: #FAF3F3;
+}
+
+#modosdecolor{
+	margin-top: -10px;
+	margin-left: 45px;
+}
+
+#modosdecolor>button{
+	border: 3px solid #191515;
+	border-radius: 10px;
+	height: 55px;
+	width: 55px;
+}
+
+#modosdecolor>button>img{
+	height: 85%;
+	width: 100%;
+}
+
+#modosdecolor>h4{
+	margin-top: -40px;
+	border-radius: 50px / 45px;
+	width: 50px;
+	background-color: #FAF3F3;
+}
+
+#ropiscula{
+	text-align: center;
+}
+
+#manualvideo{
+	border-radius: 5px;
+	margin-left: -12px;
+	margin-top: -45px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Emulador de Lavadora</title>
+	<script src="../electro.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<h1>Simulador de Lavadora (<span id="estado">Desconectado</span>)</h1>
+	<div id="simulador" class="row pdd desconectado">
+		<div id="sensors" class="rest">
+			<h2>Sensores</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div id="parameters" class="rest">
+			<h2>Parámetros</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div class="col middle rest">
+			<div id="lavadora">
+				<div id="pantalla" title="Pantalla"></div>
+				<div id="tambor">
+					<div id="ropa">
+						<div id="nBlanco"></div>
+						<div id="nColor"></div>
+						<div id="nOscuro"></div>
+					</div>
+					<div id="agua"></div>
+				</div>
+				<a href="#" id="puerta" title="Abre / Cierra la puerta">
+					<div id="tirador"></div>
+				</a>
+				<a href="#" id="filtro" title="Obstruir filtro"></a>
+			</div>
+		</div>
+
+		<div class="col middle rest">
+			<div id="usuario">
+				<div id="cabeza"></div>
+				<div id="cuerpo"></div>
+			</div>
+			<div class="col">
+				<button id="detergente" title="Añade detergente al depósito">+ Detergente</button>
+				<button id="suavizante" title="Añade suavizante al depósito">+ Suavizante</button>
+				<button id="rBlanco" title="Añade ropa blanca al tambor">+ Ropa Banca</button>
+				<button id="rColor" title="Añade ropa de color al tambor">+ Ropa Color</button>
+				<button id="rOscuro" title="Añade ropa oscura al tambor">+ Ropa Oscura</button>
+				<button id="rVaciar" title="Saca la ropa del tambor">Sacar ropa</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
